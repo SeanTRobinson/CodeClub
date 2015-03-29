@@ -46,10 +46,8 @@ build/
 *.~nib
 DerivedData/
 build/
-*.pbxuser
 *.mode1v3
 *.mode2v3
-*.perspectivev3
 !default.pbxuser
 !default.mode1v2
 !default.mode2v3
