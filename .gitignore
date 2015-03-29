@@ -32,3 +32,28 @@ build/
 
 # unless supporting rvm < 1.11.0 or doing something fancy, ignore this:
 .rvmrc
+
+
+# ===========================================================
+# Mac
+# ===========================================================
+.Trashes
+*.swp
+
+# ===========================================================
+# Xcode
+# ===========================================================
+*.~nib
+DerivedData/
+build/
+*.pbxuser
+*.mode1v3
+*.mode2v3
+*.perspectivev3
+!default.pbxuser
+!default.mode1v2
+!default.mode2v3
+!default.perspectivev3
+xcuserdata
+*.moved-aside
+*.xccheckout
