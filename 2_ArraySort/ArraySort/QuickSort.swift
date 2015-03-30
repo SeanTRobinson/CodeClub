@@ -8,9 +8,21 @@
 
 import Foundation
 
-class QuickSort : NSObject, SortProtocol {
+class QuickSort : SortAlgorithm {
     
-    func sort(array : [Int]) -> [Int] {
-        return array
+    override func sort(arrayString : String) -> [Int] {
+        var array = parseStringToArray(arrayString)
+        var sortedArray = quicksort(array)
+        return sortedArray
     }
+    
+    func quicksort(var list: [Int]) -> [Int] {
+        if list.count <= 1 {
+            return list
+        }
+        
+        let pivot = list.removeAtIndex(0)
+        return quicksort(list.filter { $0 <= pivot }) + [pivot] + quicksort(list.filter { $0 >  pivot })
+    }
+    
 }

@@ -10,17 +10,24 @@ import Foundation
 
 class Sorter {
     
-    var sortAlgorithm: SortProtocol!
+    var sortAlgorithm: SortAlgorithm
     
     init() {
         sortAlgorithm = QuickSort()
     }
     
-    func setSortAlgorithm(algorithm: SortProtocol) {
+    func setSortAlgorithm(algorithm: SortAlgorithm) {
         sortAlgorithm = algorithm
     }
     
-    func sort(array: [Int]) -> [Int] {
-        return sortAlgorithm.sort(array)
+    func sort(arrayString: String) -> (sorted: [Int], time: NSTimeInterval) {
+        var startTime = NSDate.timeIntervalSinceReferenceDate()
+        
+        var sortedArray: [Int] = sortAlgorithm.sort(arrayString)
+        
+        var finishTime = NSDate.timeIntervalSinceReferenceDate()
+        var elapsedTime : NSTimeInterval = finishTime - startTime
+        
+        return (sortedArray, elapsedTime)
     }
 }

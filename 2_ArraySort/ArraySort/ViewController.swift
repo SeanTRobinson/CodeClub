@@ -14,6 +14,13 @@ class ViewController: NSViewController {
     @IBOutlet weak var outputField: NSTextField!
     @IBOutlet weak var timeTakenLabel: NSTextField!
     
+    var sorter : Sorter
+
+    required init?(coder aDecoder: NSCoder) {
+        sorter = Sorter()
+        super.init(coder: aDecoder)
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -27,6 +34,10 @@ class ViewController: NSViewController {
     }
 
     @IBAction func sortButton(sender: AnyObject) {
+        var arrayString = inputField.stringValue
+        let output = sorter.sort(arrayString)
+        outputField.stringValue = output.sorted.description
+        timeTakenLabel.stringValue = output.time.description
     }
 
 }
