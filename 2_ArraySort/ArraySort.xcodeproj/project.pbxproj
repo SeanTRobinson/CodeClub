@@ -12,6 +12,12 @@
 		E86F72511AC8A31A003899B4 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E86F72501AC8A31A003899B4 /* Images.xcassets */; };
 		E86F72541AC8A31A003899B4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E86F72521AC8A31A003899B4 /* Main.storyboard */; };
 		E86F72601AC8A31A003899B4 /* ArraySortTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E86F725F1AC8A31A003899B4 /* ArraySortTests.swift */; };
+		E8E6197A1AC9B8FD006A8595 /* QuickSort.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8E619791AC9B8FD006A8595 /* QuickSort.swift */; };
+		E8E6197B1AC9B8FD006A8595 /* QuickSort.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8E619791AC9B8FD006A8595 /* QuickSort.swift */; };
+		E8E6197D1AC9B940006A8595 /* SortProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8E6197C1AC9B940006A8595 /* SortProtocol.swift */; };
+		E8E6197E1AC9B940006A8595 /* SortProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8E6197C1AC9B940006A8595 /* SortProtocol.swift */; };
+		E8E619801AC9BCA3006A8595 /* Sorter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8E6197F1AC9BCA3006A8595 /* Sorter.swift */; };
+		E8E619811AC9BCA3006A8595 /* Sorter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8E6197F1AC9BCA3006A8595 /* Sorter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +40,9 @@
 		E86F72591AC8A31A003899B4 /* ArraySortTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ArraySortTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E86F725E1AC8A31A003899B4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E86F725F1AC8A31A003899B4 /* ArraySortTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArraySortTests.swift; sourceTree = "<group>"; };
+		E8E619791AC9B8FD006A8595 /* QuickSort.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuickSort.swift; sourceTree = "<group>"; };
+		E8E6197C1AC9B940006A8595 /* SortProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SortProtocol.swift; sourceTree = "<group>"; };
+		E8E6197F1AC9BCA3006A8595 /* Sorter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Sorter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +84,7 @@
 		E86F72491AC8A31A003899B4 /* ArraySort */ = {
 			isa = PBXGroup;
 			children = (
+				E8E619821AC9BDEA006A8595 /* Sorting */,
 				E86F724C1AC8A31A003899B4 /* AppDelegate.swift */,
 				E86F724E1AC8A31A003899B4 /* ViewController.swift */,
 				E86F72501AC8A31A003899B4 /* Images.xcassets */,
@@ -107,6 +117,16 @@
 				E86F725E1AC8A31A003899B4 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E8E619821AC9BDEA006A8595 /* Sorting */ = {
+			isa = PBXGroup;
+			children = (
+				E8E619791AC9B8FD006A8595 /* QuickSort.swift */,
+				E8E6197C1AC9B940006A8595 /* SortProtocol.swift */,
+				E8E6197F1AC9BCA3006A8595 /* Sorter.swift */,
+			);
+			name = Sorting;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -209,7 +229,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				E86F724F1AC8A31A003899B4 /* ViewController.swift in Sources */,
+				E8E619801AC9BCA3006A8595 /* Sorter.swift in Sources */,
+				E8E6197A1AC9B8FD006A8595 /* QuickSort.swift in Sources */,
 				E86F724D1AC8A31A003899B4 /* AppDelegate.swift in Sources */,
+				E8E6197D1AC9B940006A8595 /* SortProtocol.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -218,6 +241,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				E86F72601AC8A31A003899B4 /* ArraySortTests.swift in Sources */,
+				E8E6197E1AC9B940006A8595 /* SortProtocol.swift in Sources */,
+				E8E619811AC9BCA3006A8595 /* Sorter.swift in Sources */,
+				E8E6197B1AC9B8FD006A8595 /* QuickSort.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -397,6 +423,7 @@
 				E86F72651AC8A31A003899B4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E86F72661AC8A31A003899B4 /* Build configuration list for PBXNativeTarget "ArraySortTests" */ = {
 			isa = XCConfigurationList;
@@ -405,6 +432,7 @@
 				E86F72681AC8A31A003899B4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

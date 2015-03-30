@@ -10,6 +10,10 @@ import Cocoa
 
 class ViewController: NSViewController {
 
+    @IBOutlet weak var inputField: NSTextField!
+    @IBOutlet weak var outputField: NSTextField!
+    @IBOutlet weak var timeTakenLabel: NSTextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -22,6 +26,8 @@ class ViewController: NSViewController {
         }
     }
 
+    @IBAction func sortButton(sender: AnyObject) {
+    }
 
 }
 
