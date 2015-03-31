@@ -19,6 +19,7 @@
 		E8E619801AC9BCA3006A8595 /* Sorter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8E6197F1AC9BCA3006A8595 /* Sorter.swift */; };
 		E8E619811AC9BCA3006A8595 /* Sorter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8E6197F1AC9BCA3006A8595 /* Sorter.swift */; };
 		E8E619871ACA7F6B006A8595 /* QuickSortTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8E619861ACA7F6B006A8595 /* QuickSortTests.swift */; };
+		E8E619891ACA8310006A8595 /* SortAlgorithmTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8E619881ACA8310006A8595 /* SortAlgorithmTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +47,7 @@
 		E8E6197F1AC9BCA3006A8595 /* Sorter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Sorter.swift; sourceTree = "<group>"; };
 		E8E619831ACA7B3C006A8595 /* ArraySortTests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ArraySortTests-Bridging-Header.h"; sourceTree = "<group>"; };
 		E8E619861ACA7F6B006A8595 /* QuickSortTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuickSortTests.swift; sourceTree = "<group>"; };
+		E8E619881ACA8310006A8595 /* SortAlgorithmTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SortAlgorithmTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,10 +110,11 @@
 		E86F725C1AC8A31A003899B4 /* ArraySortTests */ = {
 			isa = PBXGroup;
 			children = (
+				E8E619861ACA7F6B006A8595 /* QuickSortTests.swift */,
 				E86F725F1AC8A31A003899B4 /* ArraySortTests.swift */,
+				E8E619881ACA8310006A8595 /* SortAlgorithmTests.swift */,
 				E86F725D1AC8A31A003899B4 /* Supporting Files */,
 				E8E619831ACA7B3C006A8595 /* ArraySortTests-Bridging-Header.h */,
-				E8E619861ACA7F6B006A8595 /* QuickSortTests.swift */,
 			);
 			path = ArraySortTests;
 			sourceTree = "<group>";
@@ -246,6 +249,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E86F72601AC8A31A003899B4 /* ArraySortTests.swift in Sources */,
+				E8E619891ACA8310006A8595 /* SortAlgorithmTests.swift in Sources */,
 				E8E6197E1AC9B940006A8595 /* SortAlgorithm.swift in Sources */,
 				E8E619811AC9BCA3006A8595 /* Sorter.swift in Sources */,
 				E8E619871ACA7F6B006A8595 /* QuickSortTests.swift in Sources */,

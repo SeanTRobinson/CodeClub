@@ -15,7 +15,6 @@ class SortAlgorithm {
     }
     
     func parseStringToArray(input : String) -> [Int] {
-        
         if input == "" {
             return []
         }
@@ -23,8 +22,8 @@ class SortAlgorithm {
         let parsedStringArray = input.componentsSeparatedByString(",")
         var parsedIntArray: [Int] = []
         for string in parsedStringArray {
-            var newInt = string.toInt()
-            parsedIntArray.append(newInt!)
+            var newInt : Int? = string.toInt()
+            if newInt != nil { parsedIntArray.append(newInt!) }
         }
         
         return parsedIntArray
