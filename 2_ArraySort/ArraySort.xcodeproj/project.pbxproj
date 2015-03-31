@@ -18,6 +18,7 @@
 		E8E6197E1AC9B940006A8595 /* SortAlgorithm.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8E6197C1AC9B940006A8595 /* SortAlgorithm.swift */; };
 		E8E619801AC9BCA3006A8595 /* Sorter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8E6197F1AC9BCA3006A8595 /* Sorter.swift */; };
 		E8E619811AC9BCA3006A8595 /* Sorter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8E6197F1AC9BCA3006A8595 /* Sorter.swift */; };
+		E8E619871ACA7F6B006A8595 /* QuickSortTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8E619861ACA7F6B006A8595 /* QuickSortTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +44,8 @@
 		E8E619791AC9B8FD006A8595 /* QuickSort.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuickSort.swift; sourceTree = "<group>"; };
 		E8E6197C1AC9B940006A8595 /* SortAlgorithm.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SortAlgorithm.swift; sourceTree = "<group>"; };
 		E8E6197F1AC9BCA3006A8595 /* Sorter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Sorter.swift; sourceTree = "<group>"; };
+		E8E619831ACA7B3C006A8595 /* ArraySortTests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ArraySortTests-Bridging-Header.h"; sourceTree = "<group>"; };
+		E8E619861ACA7F6B006A8595 /* QuickSortTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuickSortTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +110,8 @@
 			children = (
 				E86F725F1AC8A31A003899B4 /* ArraySortTests.swift */,
 				E86F725D1AC8A31A003899B4 /* Supporting Files */,
+				E8E619831ACA7B3C006A8595 /* ArraySortTests-Bridging-Header.h */,
+				E8E619861ACA7F6B006A8595 /* QuickSortTests.swift */,
 			);
 			path = ArraySortTests;
 			sourceTree = "<group>";
@@ -243,6 +248,7 @@
 				E86F72601AC8A31A003899B4 /* ArraySortTests.swift in Sources */,
 				E8E6197E1AC9B940006A8595 /* SortAlgorithm.swift in Sources */,
 				E8E619811AC9BCA3006A8595 /* Sorter.swift in Sources */,
+				E8E619871ACA7F6B006A8595 /* QuickSortTests.swift in Sources */,
 				E8E6197B1AC9B8FD006A8595 /* QuickSort.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -372,6 +378,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
@@ -384,6 +391,8 @@
 				INFOPLIST_FILE = ArraySortTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "ArraySortTests/ArraySortTests-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ArraySort.app/Contents/MacOS/ArraySort";
 			};
 			name = Debug;
@@ -392,6 +401,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
@@ -400,6 +410,7 @@
 				INFOPLIST_FILE = ArraySortTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "ArraySortTests/ArraySortTests-Bridging-Header.h";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ArraySort.app/Contents/MacOS/ArraySort";
 			};
 			name = Release;

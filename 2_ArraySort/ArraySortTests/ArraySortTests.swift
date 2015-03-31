@@ -8,6 +8,7 @@
 
 import Cocoa
 import XCTest
+import ArraySort
 
 class ArraySortTests: XCTestCase {
     
@@ -21,15 +22,21 @@ class ArraySortTests: XCTestCase {
         super.tearDown()
     }
     
-    func testExample() {
-        // This is an example of a functional test case.
-        XCTAssert(true, "Pass")
+    func testArraySorting() {
+        let sorter = Sorter()
+        let testArray = "8,4,6,2,9"
+        let output = sorter.sort(testArray)
+        XCTAssertEqual(output.sorted, [2,4,6,8,9], "Array not sorted")
     }
     
     func testPerformanceExample() {
         // This is an example of a performance test case.
+        let sorter = Sorter()
+        let testArray = "8,4,6,2,9"
+
         self.measureBlock() {
             // Put the code you want to measure the time of here.
+            let output = sorter.sort(testArray)
         }
     }
     

@@ -15,6 +15,11 @@ class SortAlgorithm {
     }
     
     func parseStringToArray(input : String) -> [Int] {
+        
+        if input == "" {
+            return []
+        }
+        
         let parsedStringArray = input.componentsSeparatedByString(",")
         var parsedIntArray: [Int] = []
         for string in parsedStringArray {

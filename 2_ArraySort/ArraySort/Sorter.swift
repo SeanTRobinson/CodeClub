@@ -21,6 +21,10 @@ class Sorter {
     }
     
     func sort(arrayString: String) -> (sorted: [Int], time: NSTimeInterval) {
+        if arrayString == "" {
+            return ([], 0)
+        }
+        
         var startTime = NSDate.timeIntervalSinceReferenceDate()
         
         var sortedArray: [Int] = sortAlgorithm.sort(arrayString)
