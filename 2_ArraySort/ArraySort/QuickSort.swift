@@ -24,5 +24,5 @@ class QuickSort : SortAlgorithm {
         let pivot = list.removeAtIndex(0)
         return quicksort(list.filter { $0 <= pivot }) + [pivot] + quicksort(list.filter { $0 >  pivot })
     }
-    
+
 }
