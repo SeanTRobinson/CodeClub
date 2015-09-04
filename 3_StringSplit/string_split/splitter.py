@@ -13,8 +13,14 @@ class Splitter():
         consecutive_upper_merged = self.merge_consecutive_uppercase(number_merged)
         downcased = self.downcase_uppercase_followed_by_lower(consecutive_upper_merged)
         titled = self.uppercase_first_char(downcased)
+        single_char_downcased = self.downcase_single_char_words(titled)
 
-        return titled
+        return single_char_downcased
+
+    def downcase_single_char_words(self, titled):
+        callback = lambda pat: pat.group(1).lower()
+        single_char_downcased = re.sub(r'(\s+([A-Z])\s+)', callback, titled);
+        return single_char_downcased
 
     def uppercase_first_char(self, downcased):
         titled = re.sub('([a-zA-Z])', lambda x: x.groups()[0].upper(), downcased, 1)
