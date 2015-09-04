@@ -1,6 +1,7 @@
 from nose.tools import *
 from string_split.splitter import Splitter
 
+
 def test_splitSplitsTwoCamelCaseWords():
     splitter = Splitter()
     input = "ElwynLikesCheese"
@@ -8,6 +9,7 @@ def test_splitSplitsTwoCamelCaseWords():
 
     output = splitter.split(input)
     assert_equal(expected_output, output)
+
 
 def test_splitSplitsWordFromNumbers():
     splitter = Splitter()
@@ -17,6 +19,7 @@ def test_splitSplitsWordFromNumbers():
     output = splitter.split(input)
     assert_equal(expected_output, output)
 
+
 def test_splitSplitsOnConsecutiveUppercase():
     splitter = Splitter()
     input = "ElwynLikesACheese"
@@ -24,6 +27,7 @@ def test_splitSplitsOnConsecutiveUppercase():
 
     output = splitter.split(input)
     assert_equal(expected_output, output)
+
 
 def test_splitOnlySplitsConsecutiveUppercaseIfFollowedByLowercase():
     splitter = Splitter()
