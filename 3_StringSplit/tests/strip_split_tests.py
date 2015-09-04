@@ -7,7 +7,7 @@ def test_splitSplitsTwoCamelCaseWords():
     input = "ElwynLikesCheese"
     expected_output = "Elwyn likes cheese"
 
-    output = splitter.split(input)
+    output = splitter.split_string_into_sentence(input)
     assert_equal(expected_output, output)
 
 
@@ -16,7 +16,7 @@ def test_splitSplitsWordFromNumbers():
     input = "ElwynAte10CheeseBiscuits"
     expected_output = "Elwyn ate 10 cheese biscuits"
 
-    output = splitter.split(input)
+    output = splitter.split_string_into_sentence(input)
     assert_equal(expected_output, output)
 
 
@@ -25,7 +25,7 @@ def test_splitSplitsOnConsecutiveUppercase():
     input = "ElwynLikesACheese"
     expected_output = "Elwyn likes a cheese"
 
-    output = splitter.split(input)
+    output = splitter.split_string_into_sentence(input)
     assert_equal(expected_output, output)
 
 
@@ -34,7 +34,7 @@ def test_splitOnlySplitsConsecutiveUppercaseIfFollowedByLowercase():
     input = "ElwynLikesTUCCheeseBiscuits"
     expected_output = "Elwyn likes TUC cheese biscuits"
 
-    output = splitter.split(input)
+    output = splitter.split_string_into_sentence(input)
     assert_equal(expected_output, output)
 
 def test_splitMaintainsAcronymsAtEndOfString():
@@ -42,5 +42,13 @@ def test_splitMaintainsAcronymsAtEndOfString():
     input = "ElwynLikesABiscuitMadeByTUC"
     expected_output = "Elwyn likes a biscuit made by TUC"
 
-    output = splitter.split(input)
+    output = splitter.split_string_into_sentence(input)
+    assert_equal(expected_output, output)
+
+def test_allCases():
+    splitter = Splitter()
+    input = "ElwynALikesA10TUCCheeseBiscuitsTUC"
+    expected_output = "Elwyn a likes a 10 TUC cheese biscuits TUC"
+
+    output = splitter.split_string_into_sentence(input)
     assert_equal(expected_output, output)
