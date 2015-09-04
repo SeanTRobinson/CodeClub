@@ -15,3 +15,13 @@ python string_split/split.py "String1" "String2" etc...
 ```
 nosetests
 ```
+
+# Example:
+```
+python string_split/split.py "String10" "StringA200" "StringA38AWS"
+
+Formatted 'String10' -> 'String 10'
+Formatted 'StringA200' -> 'String a 200'
+Formatted 'StringA38AWS' -> 'String a 38 AWS'
+
+```
