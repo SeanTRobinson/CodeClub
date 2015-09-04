@@ -36,3 +36,11 @@ def test_splitOnlySplitsConsecutiveUppercaseIfFollowedByLowercase():
 
     output = splitter.split(input)
     assert_equal(expected_output, output)
+
+def test_splitMaintainsAcronymsAtEndOfString():
+    splitter = Splitter()
+    input = "ElwynLikesABiscuitMadeByTUC"
+    expected_output = "Elwyn likes a biscuit made by TUC"
+
+    output = splitter.split(input)
+    assert_equal(expected_output, output)
