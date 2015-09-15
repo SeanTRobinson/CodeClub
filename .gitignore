@@ -116,3 +116,14 @@ docs/_build/
 
 # PyBuilder
 target/
+
+# ANDROID STUDIO
+# ===========================================
+.gradle
+/local.properties
+/.idea/workspace.xml
+/.idea/libraries
+.DS_Store
+/build
+/captures
+

@@ -2,9 +2,6 @@ import re
 
 class Splitter():
 
-    def lowercase_replacement(match):
-        return "["+match.group(1).lower()+"]"
-
     def split_string_into_sentence(self, input):
 
         # ElwynLikesA10TUCCheeseBiscuitsTUC
